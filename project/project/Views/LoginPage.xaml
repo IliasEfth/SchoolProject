@@ -4,11 +4,14 @@
              x:Class="project.Views.LoginPage"
              xmlns:local="clr-namespace:project.Behaviour"
              xmlns:images="clr-namespace:project"
-             BackgroundColor="#3aa7ab">
+             BackgroundColor="#03a8f4">
     <ContentPage.Content>
         <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
             <StackLayout>
-                <Image Source="{images:EmbeddedImagesHelper project.Assets.Login.png}"
+                <!--<Image Source="{images:EmbeddedImagesHelper project.Assets.Login.png}"
+                       Aspect="Fill"
+                       HorizontalOptions="Center"/>-->
+                <Image Source="{images:EmbeddedImagesHelper project.Assets.meletiou.jpg}"
                        Aspect="Fill"
                        HorizontalOptions="Center"/>
             </StackLayout>
@@ -58,7 +61,7 @@
                     </Entry>
 
                     <Label Text="Username is required" 
-                           TextColor="#bf2900" 
+                           TextColor="#f40303" 
                            IsVisible="{Binding Login.UserName.IsInvalid}" 
                            Grid.Row="3"
                            Grid.Column="1"
@@ -81,7 +84,7 @@
                         </Entry.Behaviors>
                     </Entry>
                     <Label Text="Password is required" 
-                           TextColor="#bf2900"
+                           TextColor="#f40303"
                            IsVisible="{Binding Login.PassWord.IsInvalid}"
                            Grid.Row="6"
                            Grid.Column="1"

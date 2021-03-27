@@ -4,12 +4,14 @@
        xmlns:local="clr-namespace:project.Views"
        Title="project"
        x:Class="project.AppShell">
-    
-    <ShellItem Route="Login">
+
+    <ShellItem Route="Login" 
+               FlyoutItemIsVisible="False">
         <ShellContent ContentTemplate="{DataTemplate local:LoginPage}"></ShellContent>
     </ShellItem>
-    <ShellItem Route="MainPage">
-        <ShellContent ContentTemplate="{DataTemplate local:MainPage}"></ShellContent>
-    </ShellItem>
-    
+    <FlyoutItem Title="MainPage">
+        <Tab Route="MainPage">
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}"></ShellContent>
+        </Tab>
+    </FlyoutItem>
 </Shell>
