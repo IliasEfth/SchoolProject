@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="project.Views.LoginPage"
+             xmlns:local="clr-namespace:project.Behaviour"
+             xmlns:images="clr-namespace:project"
+             BackgroundColor="#3aa7ab">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+            <StackLayout>
+                <Image Source="{images:EmbeddedImagesHelper project.Assets.Login.png}"
+                       Aspect="Fill"
+                       HorizontalOptions="Center"/>
+            </StackLayout>
+            <StackLayout>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*">
+                        </ColumnDefinition>
+                        <ColumnDefinition Width="*">
+                        </ColumnDefinition>
+                        <ColumnDefinition Width="*">
+                        </ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Username" 
+                           Grid.Row="1"
+                           Grid.Column="1"
+                           TextColor="Black"
+                           FontSize="15">
+                    </Label>
+
+                    <Entry Text="{Binding Login.UserName.Value}"
+                           TextColor="Black"
+                           BackgroundColor="AntiqueWhite"
+                           PlaceholderColor="DarkGray"
+                           FontSize="15"
+                           Grid.Row="2"
+                           Grid.Column="1">
+                        <Entry.Behaviors>
+                            <local:LoginEntryBehaviour></local:LoginEntryBehaviour>
+                        </Entry.Behaviors>
+                    </Entry>
+
+                    <Label Text="Username is required" 
+                           TextColor="#bf2900" 
+                           IsVisible="{Binding Login.UserName.IsInvalid}" 
+                           Grid.Row="3"
+                           Grid.Column="1"
+                           FontSize="15"></Label>
+                    <Label Text="Password"
+                           Grid.Row="4"
+                           Grid.Column="1"
+                           TextColor="Black"
+                           FontSize="15"></Label>
+                    <Entry Text="{Binding Login.PassWord.Value}"
+                           IsPassword="True"
+                           Grid.Row="5"
+                           Grid.Column="1"
+                           TextColor="Black"
+                           BackgroundColor="AntiqueWhite"
+                           PlaceholderColor="DarkGray"
+                           FontSize="15">
+                        <Entry.Behaviors>
+                            <local:LoginEntryBehaviour></local:LoginEntryBehaviour>
+                        </Entry.Behaviors>
+                    </Entry>
+                    <Label Text="Password is required" 
+                           TextColor="#bf2900"
+                           IsVisible="{Binding Login.PassWord.IsInvalid}"
+                           Grid.Row="6"
+                           Grid.Column="1"
+                           FontSize="15"></Label>
+                    <Button Text="Login" 
+                            Command="{Binding Click}"
+                            Grid.Row="7"
+                            Grid.Column="1"
+                            BackgroundColor="LightCyan"
+                            TextColor="Black"
+                            FontSize="15">
+                    </Button>
+                </Grid>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

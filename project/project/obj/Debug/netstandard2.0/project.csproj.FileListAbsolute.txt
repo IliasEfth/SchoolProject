@@ -1,0 +1,16 @@
+C:\Users\hlias\Desktop\Ilias\Alilepidrasi\project\project\project\obj\Debug\netstandard2.0\project.csprojAssemblyReference.cache
+C:\Users\hlias\Desktop\Ilias\Alilepidrasi\project\project\project\bin\Debug\netstandard2.0\project.deps.json
+C:\Users\hlias\Desktop\Ilias\Alilepidrasi\project\project\project\bin\Debug\netstandard2.0\project.dll
+C:\Users\hlias\Desktop\Ilias\Alilepidrasi\project\project\project\bin\Debug\netstandard2.0\ref\project.dll
+C:\Users\hlias\Desktop\Ilias\Alilepidrasi\project\project\project\bin\Debug\netstandard2.0\project.pdb
+C:\Users\hlias\Desktop\Ilias\Alilepidrasi\project\project\project\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\hlias\Desktop\Ilias\Alilepidrasi\project\project\project\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
+C:\Users\hlias\Desktop\Ilias\Alilepidrasi\project\project\project\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
+C:\Users\hlias\Desktop\Ilias\Alilepidrasi\project\project\project\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+C:\Users\hlias\Desktop\Ilias\Alilepidrasi\project\project\project\obj\Debug\netstandard2.0\project.AssemblyInfoInputs.cache
+C:\Users\hlias\Desktop\Ilias\Alilepidrasi\project\project\project\obj\Debug\netstandard2.0\project.AssemblyInfo.cs
+C:\Users\hlias\Desktop\Ilias\Alilepidrasi\project\project\project\obj\Debug\netstandard2.0\project.csproj.CoreCompileInputs.cache
+C:\Users\hlias\Desktop\Ilias\Alilepidrasi\project\project\project\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\hlias\Desktop\Ilias\Alilepidrasi\project\project\project\obj\Debug\netstandard2.0\project.dll
+C:\Users\hlias\Desktop\Ilias\Alilepidrasi\project\project\project\obj\Debug\netstandard2.0\ref\project.dll
+C:\Users\hlias\Desktop\Ilias\Alilepidrasi\project\project\project\obj\Debug\netstandard2.0\project.pdb
