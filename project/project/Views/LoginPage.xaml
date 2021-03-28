@@ -11,7 +11,7 @@
                 <!--<Image Source="{images:EmbeddedImagesHelper project.Assets.Login.png}"
                        Aspect="Fill"
                        HorizontalOptions="Center"/>-->
-                <Image Source="{images:EmbeddedImagesHelper project.Assets.meletiou.jpg}"
+                <Image Source="{images:EmbeddedImagesHelper project.Assets.xd.jpg}"
                        Aspect="Fill"
                        HorizontalOptions="Center"/>
             </StackLayout>
