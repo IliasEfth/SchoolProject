@@ -9,12 +9,14 @@
     <None Remove="Assets\HomeIcon.png" />
     <None Remove="Assets\Login.png" />
     <None Remove="Assets\meletiou.jpg" />
+    <None Remove="Assets\SimpleHomeIcon.png" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Assets\HomeIcon.png" />
     <EmbeddedResource Include="Assets\Login.png" />
     <EmbeddedResource Include="Assets\meletiou.jpg" />
+    <EmbeddedResource Include="Assets\SimpleHomeIcon.png" />
   </ItemGroup>
 
   <ItemGroup>

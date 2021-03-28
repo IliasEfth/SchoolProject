@@ -10,8 +10,13 @@
                FlyoutItemIsVisible="False">
         <ShellContent ContentTemplate="{DataTemplate local:LoginPage}"></ShellContent>
     </ShellItem>
-    <FlyoutItem Title="MainPage" Icon="{Binding Source={images:EmbeddedImagesHelper project.Assets.HomeIcon.png}}">
+    <FlyoutItem Title="MainPage" Icon="{Binding Source={images:EmbeddedImagesHelper project.Assets.SimpleHomeIcon.png}}">
         <Tab Route="MainPage">
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}"></ShellContent>
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="TestHomeIcon" Icon="{Binding Source={images:EmbeddedImagesHelper project.Assets.HomeIcon.png}}">
+        <Tab Route="TestHomeIcon">
             <ShellContent ContentTemplate="{DataTemplate local:MainPage}"></ShellContent>
         </Tab>
     </FlyoutItem>
