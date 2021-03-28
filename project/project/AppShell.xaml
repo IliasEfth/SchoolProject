@@ -2,6 +2,7 @@
 <Shell xmlns="http://xamarin.com/schemas/2014/forms" 
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
        xmlns:local="clr-namespace:project.Views"
+       xmlns:images="clr-namespace:project"
        Title="project"
        x:Class="project.AppShell">
 
@@ -9,7 +10,7 @@
                FlyoutItemIsVisible="False">
         <ShellContent ContentTemplate="{DataTemplate local:LoginPage}"></ShellContent>
     </ShellItem>
-    <FlyoutItem Title="MainPage">
+    <FlyoutItem Title="MainPage" Icon="{Binding Source={images:EmbeddedImagesHelper project.Assets.HomeIcon.png}}">
         <Tab Route="MainPage">
             <ShellContent ContentTemplate="{DataTemplate local:MainPage}"></ShellContent>
         </Tab>
