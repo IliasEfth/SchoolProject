@@ -23,13 +23,38 @@ namespace project.ViewModels
             }
         }
         public DelegateCommand Click { get; private set; }
+        public DelegateCommand LoginShowPassword { get; private set; }
+
+        private bool isPassword;
+        public bool IsPassWord {
+            get => this.isPassword;
+            private set => this.isPassword = value;
+        }
+        private bool lockerImage;
+        public bool LockerImage
+
+        {
+            get => this.lockerImage;
+            private set => this.lockerImage = value;
+        }
+        private bool unlockerImage;
+        public bool UnLockerImage
+
+        {
+            get => this.unlockerImage;
+            private set => this.unlockerImage = value;
+        }
         public LoginPageViewModel(ILoginValidatorService loginService)
         {
             this.loginService = loginService;
             Click = new DelegateCommand(loginAction, can)
             .ObservesProperty(() => Login.UserName.Value)
             .ObservesProperty(() => Login.PassWord.Value);
+            LoginShowPassword = new DelegateCommand(showPassWord);
             Login = new LoginModel();
+            IsPassWord = true;
+            LockerImage = false;
+            UnLockerImage = true;
         }
 
         private async void loginAction()
@@ -43,6 +68,23 @@ namespace project.ViewModels
             {
                 await App.Current.MainPage.DisplayAlert("Error", "Wrong Username of Password please try again!", "Ok");
             }
+        }
+        private void showPassWord()
+        {
+            this.IsPassWord = !this.isPassword;
+            if (!this.IsPassWord)
+            {
+                LockerImage = true;
+                UnLockerImage = false;
+            }
+            else
+            {
+                LockerImage = false;
+                UnLockerImage = true;
+            }
+            OnPropertyChanged("IsPassWord");
+            OnPropertyChanged("LockerImage");
+            OnPropertyChanged("UnLockerImage");
         }
         private bool can()
         {

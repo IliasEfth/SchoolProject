@@ -9,5 +9,9 @@ namespace project.Models.Login.Interfaces
     {
         ILoginModel Login { get; set; }
         DelegateCommand Click { get; }
+        DelegateCommand LoginShowPassword { get; }
+        Boolean IsPassWord { get; }
+        Boolean LockerImage { get; }
+        Boolean UnLockerImage { get; }
     }
 }

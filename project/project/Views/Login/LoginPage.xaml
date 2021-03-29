@@ -68,18 +68,51 @@
                            Grid.Column="1"
                            TextColor="Black"
                            FontSize="15"></Label>
-                    <Entry Text="{Binding Login.PassWord.Value}"
-                           IsPassword="True"
-                           Grid.Row="5"
-                           Grid.Column="1"
-                           TextColor="Black"
-                           BackgroundColor="AntiqueWhite"
-                           PlaceholderColor="DarkGray"
-                           FontSize="15">
-                        <Entry.Behaviors>
-                            <local:LoginEntryBehaviour></local:LoginEntryBehaviour>
-                        </Entry.Behaviors>
-                    </Entry>
+                    <!--Grid.Row="5"
+                          Grid.Column="1"-->
+                    <Grid Grid.Row="5"
+                          Grid.Column="1"
+                          HeightRequest="40">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Entry Keyboard="Default"
+                               Text="{Binding Login.PassWord.Value}"
+                               IsPassword="{Binding IsPassWord}"
+                               TextColor="Black"
+                               BackgroundColor="AntiqueWhite"
+                               PlaceholderColor="DarkGray"
+                               FontSize="15"
+                               Grid.Row="0"
+                               Grid.Column="0"
+                               Grid.ColumnSpan="2">
+                            <Entry.Behaviors>
+                                <local:LoginEntryBehaviour></local:LoginEntryBehaviour>
+                            </Entry.Behaviors>
+                        </Entry>
+                        <Image Source="{images:EmbeddedImagesHelper project.Assets.Locker.png}"
+                               Grid.Row="0"
+                               Grid.Column="1"
+                               Grid.ColumnSpan="1"
+                               HorizontalOptions="End"
+                               IsVisible="{Binding LockerImage}">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding LoginShowPassword}"
+                                                      NumberOfTapsRequired="1"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Image Source="{images:EmbeddedImagesHelper project.Assets.UnLocker.png}"
+                               Grid.Row="0"
+                               Grid.Column="1"
+                               Grid.ColumnSpan="1"
+                               HorizontalOptions="End"
+                               IsVisible="{Binding UnLockerImage}">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding LoginShowPassword}"
+                                                      NumberOfTapsRequired="1"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </Grid>
                     <Label Text="Password is required" 
                            TextColor="#f40303"
                            IsVisible="{Binding Login.PassWord.IsInvalid}"

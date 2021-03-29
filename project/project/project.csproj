@@ -7,14 +7,18 @@
 
   <ItemGroup>
     <None Remove="Assets\HomeIcon.png" />
+    <None Remove="Assets\Locker.png" />
     <None Remove="Assets\Login.png" />
     <None Remove="Assets\SimpleHomeIcon.png" />
+    <None Remove="Assets\UnLocker.png" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Assets\HomeIcon.png" />
+    <EmbeddedResource Include="Assets\Locker.png" />
     <EmbeddedResource Include="Assets\Login.png" />
     <EmbeddedResource Include="Assets\SimpleHomeIcon.png" />
+    <EmbeddedResource Include="Assets\UnLocker.png" />
   </ItemGroup>
 
   <ItemGroup>
