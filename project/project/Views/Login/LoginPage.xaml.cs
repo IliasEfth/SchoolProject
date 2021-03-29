@@ -1,4 +1,6 @@
-﻿using project.ViewModels;
+﻿using project.Models.Login.Interfaces;
+using project.Services;
+using project.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,7 +18,8 @@ namespace project.Views
         public LoginPage()
         {
             InitializeComponent();
-            BindingContext = new LoginPageViewModel();
+            ILogin login = new LoginPageViewModel(new LoginValidatorService());
+            BindingContext = login;
         }
         protected override void OnAppearing()
         {

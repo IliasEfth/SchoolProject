@@ -8,10 +8,7 @@
     <ContentPage.Content>
         <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
             <StackLayout>
-                <!--<Image Source="{images:EmbeddedImagesHelper project.Assets.Login.png}"
-                       Aspect="Fill"
-                       HorizontalOptions="Center"/>-->
-                <Image Source="{images:EmbeddedImagesHelper project.Assets.xd.jpg}"
+                <Image Source="{images:EmbeddedImagesHelper project.Assets.Login.png}"
                        Aspect="Fill"
                        HorizontalOptions="Center"/>
             </StackLayout>
@@ -60,7 +57,7 @@
                         </Entry.Behaviors>
                     </Entry>
 
-                    <Label Text="Username is required" 
+                    <Label Text="Username is required"
                            TextColor="#f40303" 
                            IsVisible="{Binding Login.UserName.IsInvalid}" 
                            Grid.Row="3"

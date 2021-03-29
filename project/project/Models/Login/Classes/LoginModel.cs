@@ -1,14 +1,15 @@
-﻿using System;
+﻿using project.Models.Login.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using Xamarin.Forms;
 
 namespace project.Models
 {
-    class LoginModel : BindableObject
+    class LoginModel : BindableObject , ILoginModel
     {
-        private ValidatedLoginEntrys _username;
-        public ValidatedLoginEntrys UserName
+        private IValidatedEntry _username;
+        public IValidatedEntry UserName
         {
             get => this._username;
             set
@@ -17,8 +18,8 @@ namespace project.Models
                 OnPropertyChanged("UserName");
             }
         }
-        private ValidatedLoginEntrys _password;
-        public ValidatedLoginEntrys PassWord
+        private IValidatedEntry _password;
+        public IValidatedEntry PassWord
         {
             get => _password;
             set
@@ -35,7 +36,7 @@ namespace project.Models
         }
     }
 
-    public class ValidatedLoginEntrys : BindableObject
+    public class ValidatedLoginEntrys : BindableObject , IValidatedEntry
     {
         public bool IsValid
         {

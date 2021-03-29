@@ -1,5 +1,7 @@
 ﻿using Prism.Commands;
 using project.Models;
+using project.Models.Login.Interfaces;
+using project.Services;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -7,10 +9,11 @@ using Xamarin.Forms;
 
 namespace project.ViewModels
 {
-    class LoginPageViewModel : BindableObject
+    class LoginPageViewModel : BindableObject, ILogin
     {
-        private LoginModel _login;
-        public LoginModel Login
+        private ILoginValidatorService loginService;
+        private ILoginModel _login;
+        public ILoginModel Login
         {
             get => _login;
             set
@@ -20,8 +23,9 @@ namespace project.ViewModels
             }
         }
         public DelegateCommand Click { get; private set; }
-        public LoginPageViewModel()
+        public LoginPageViewModel(ILoginValidatorService loginService)
         {
+            this.loginService = loginService;
             Click = new DelegateCommand(loginAction, can)
             .ObservesProperty(() => Login.UserName.Value)
             .ObservesProperty(() => Login.PassWord.Value);
@@ -30,8 +34,15 @@ namespace project.ViewModels
 
         private async void loginAction()
         {
-            //await App.Current.MainPage.DisplayAlert("Next page", string.Format("{0} {1}", Login.UserName.Value, Login.PassWord.Value), "OK");
-            await Shell.Current.GoToAsync("//MainPage");
+            var value = loginService.ValidateUser(Login);
+            if (value)
+            {
+                await Shell.Current.GoToAsync("//MainPage");
+            }
+            else
+            {
+                await App.Current.MainPage.DisplayAlert("Error", "Wrong Username of Password please try again!", "Ok");
+            }
         }
         private bool can()
         {
