@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:project.Behaviour"
+             xmlns:images="clr-namespace:project"
+             x:Class="project.Views.Page1">
+    <ContentPage.Content>
+        <StackLayout>
+            <!--  <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" /> -->
+            <Image Source="{images:EmbeddedImagesHelper project.rooms.preview2.jpg}"
+                        Aspect="Fill"
+                        HorizontalOptions="Center">
+            </Image>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

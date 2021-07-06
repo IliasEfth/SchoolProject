@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "E2Mu/w6wqIdchjM57epRycqM3O7U3WUzAbVFt4MQHwOPDEtQ5HAx0XW+Uf7p0CONX1xuPfrOA/sl1JzHKCISYw==",
+  "dgSpecHash": "PBLt9Ugr3ENFtcjyvEgPdCutqJD4/W74sdaHrGDiNMo/sZC3rRoSbq7UPrwhihzSLaOpLq/DdgHi4sLIijhhuA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hlias\\Desktop\\Ilias\\Alilepidrasi\\project\\project\\project\\project.csproj",
+  "projectFilePath": "C:\\Users\\Ion\\source\\repos\\SchoolProject\\project\\project\\project.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\hlias\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\hlias\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\hlias\\.nuget\\packages\\prism.core\\8.0.0.1909\\prism.core.8.0.0.1909.nupkg.sha512",
-    "C:\\Users\\hlias\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Ion\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Ion\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Ion\\.nuget\\packages\\prism.core\\8.0.0.1909\\prism.core.8.0.0.1909.nupkg.sha512",
+    "C:\\Users\\Ion\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
   ],

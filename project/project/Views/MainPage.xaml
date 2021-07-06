@@ -1,12 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:project.Behaviour"
+             xmlns:images="clr-namespace:project"
              x:Class="project.Views.MainPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Button Text="Help" 
+                            Command="{Binding Click}"
+                            HorizontalOptions="End"
+                            BackgroundColor="White"
+                            TextColor="Black"
+                            FontSize="15">
+            </Button>
+            <Label Text="Welcome to the 1st floor" 
+                           HorizontalOptions="Center"
+                           TextColor="Coral"
+                           FontSize="25">
+            </Label>
+            <Image Source="{images:EmbeddedImagesHelper project.rooms.preview1.jpg}"
+                        Aspect="Fill"
+                        HorizontalOptions="Center">
+            </Image>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

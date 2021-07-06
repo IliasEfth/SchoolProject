@@ -1,1 +1,1 @@
-C:\Users\hlias\Desktop\Ilias\Alilepidrasi\project\project\project.UWP\project.UWP.csproj;x86
+C:\Users\Ion\source\repos\SchoolProject\project\project.UWP\project.UWP.csproj;x86
