@@ -1053,18 +1053,18 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ion\\.nuget\\packages\\": {},
+    "C:\\Users\\hlias\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ion\\source\\repos\\SchoolProject\\project\\project.iOS\\project.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\hlias\\Desktop\\Ilias\\Alilepidrasi\\project\\project\\project.iOS\\project.iOS.csproj",
       "projectName": "project.iOS",
-      "projectPath": "C:\\Users\\Ion\\source\\repos\\SchoolProject\\project\\project.iOS\\project.iOS.csproj",
-      "packagesPath": "C:\\Users\\Ion\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ion\\source\\repos\\SchoolProject\\project\\project.iOS\\obj\\",
+      "projectPath": "C:\\Users\\hlias\\Desktop\\Ilias\\Alilepidrasi\\project\\project\\project.iOS\\project.iOS.csproj",
+      "packagesPath": "C:\\Users\\hlias\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\hlias\\Desktop\\Ilias\\Alilepidrasi\\project\\project\\project.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1072,7 +1072,7 @@
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Ion\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\hlias\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -1087,8 +1087,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\Ion\\source\\repos\\SchoolProject\\project\\project\\project.csproj": {
-              "projectPath": "C:\\Users\\Ion\\source\\repos\\SchoolProject\\project\\project\\project.csproj"
+            "C:\\Users\\hlias\\Desktop\\Ilias\\Alilepidrasi\\project\\project\\project\\project.csproj": {
+              "projectPath": "C:\\Users\\hlias\\Desktop\\Ilias\\Alilepidrasi\\project\\project\\project\\project.csproj"
             }
           }
         }

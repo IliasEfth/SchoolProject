@@ -6,10 +6,10 @@
        Title="project"
        x:Class="project.AppShell">
 
-    <ShellItem Route="Login" 
+    <!--<ShellItem Route="Login" 
                FlyoutItemIsVisible="False">
         <ShellContent ContentTemplate="{DataTemplate local:LoginPage}"></ShellContent>
-    </ShellItem>
+    </ShellItem>-->
     <FlyoutItem Title="1st floor" Icon="{Binding Source={images:EmbeddedImagesHelper project.Assets.HomeIcon.png}}">
         <Tab Route="MainPage">
             <ShellContent ContentTemplate="{DataTemplate local:MainPage}"></ShellContent>

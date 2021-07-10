@@ -66,7 +66,6 @@ namespace project.ViewModels
             }
             else
             {
-                //my stupid code
                 Login.UserName.Value = "";
                 Login.PassWord.Value = "";
                 await App.Current.MainPage.DisplayAlert("Error", "Wrong Username or Password. Please try again!", "Ok");

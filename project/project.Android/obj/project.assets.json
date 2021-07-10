@@ -2174,18 +2174,18 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ion\\.nuget\\packages\\": {},
+    "C:\\Users\\hlias\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ion\\source\\repos\\SchoolProject\\project\\project.Android\\project.Android.csproj",
+      "projectUniqueName": "C:\\Users\\hlias\\Desktop\\Ilias\\Alilepidrasi\\project\\project\\project.Android\\project.Android.csproj",
       "projectName": "project.Android",
-      "projectPath": "C:\\Users\\Ion\\source\\repos\\SchoolProject\\project\\project.Android\\project.Android.csproj",
-      "packagesPath": "C:\\Users\\Ion\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ion\\source\\repos\\SchoolProject\\project\\project.Android\\obj\\",
+      "projectPath": "C:\\Users\\hlias\\Desktop\\Ilias\\Alilepidrasi\\project\\project\\project.Android\\project.Android.csproj",
+      "packagesPath": "C:\\Users\\hlias\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\hlias\\Desktop\\Ilias\\Alilepidrasi\\project\\project\\project.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2193,7 +2193,7 @@
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Ion\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\hlias\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -2208,8 +2208,8 @@
       "frameworks": {
         "monoandroid11.0": {
           "projectReferences": {
-            "C:\\Users\\Ion\\source\\repos\\SchoolProject\\project\\project\\project.csproj": {
-              "projectPath": "C:\\Users\\Ion\\source\\repos\\SchoolProject\\project\\project\\project.csproj"
+            "C:\\Users\\hlias\\Desktop\\Ilias\\Alilepidrasi\\project\\project\\project\\project.csproj": {
+              "projectPath": "C:\\Users\\hlias\\Desktop\\Ilias\\Alilepidrasi\\project\\project\\project\\project.csproj"
             }
           }
         }
