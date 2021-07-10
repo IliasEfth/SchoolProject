@@ -24,169 +24,160 @@
                 <Image Source="{images:EmbeddedImagesHelper project.rooms.preview1.jpg}"
                        Aspect="Fill"
                        HorizontalOptions="Center"
-                       RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"/>
-                
-                <Grid RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
-                      RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
-                    <Grid><!--set opacity = 0 so we can hide em buttons-->
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="*">
-                            </RowDefinition>
-                            <RowDefinition Height="*">
-                            </RowDefinition>
-                            <RowDefinition Height="*">
-                            </RowDefinition>
-                            <RowDefinition Height="*">
-                            </RowDefinition>
-                            <RowDefinition Height="*">
-                            </RowDefinition>
-                            <RowDefinition Height="*">
-                            </RowDefinition>
-                            <RowDefinition Height="*">
-                            </RowDefinition>
-                            <RowDefinition Height="*">
-                            </RowDefinition>
-                            <RowDefinition Height="*">
-                            </RowDefinition>
-                            <RowDefinition Height="*">
-                            </RowDefinition>
-                            <RowDefinition Height="*">
-                            </RowDefinition>
-                            <RowDefinition Height="*">
-                            </RowDefinition>
-                            <RowDefinition Height="*">
-                            </RowDefinition>
-                            <RowDefinition Height="*">
-                            </RowDefinition>
-                            <RowDefinition Height="*">
-                            </RowDefinition>
-                            <RowDefinition Height="*">
-                            </RowDefinition>
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*">
-                            </ColumnDefinition>
-                            <ColumnDefinition Width="*">
-                            </ColumnDefinition>
-                            <ColumnDefinition Width="*">
-                            </ColumnDefinition>
+                       RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                       x:Name="firstFloorImage"/>
 
-                            <ColumnDefinition Width="*">
-                            </ColumnDefinition>
-                            <ColumnDefinition Width="*">
-                            </ColumnDefinition>
-                            <ColumnDefinition Width="*">
-                            </ColumnDefinition>
+                <Grid RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=firstFloorImage, Property=X}"
+                      RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=firstFloorImage, Property=Y}"
+                      RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToView, ElementName=firstFloorImage, Property=Width}"
+                      RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToView, ElementName=firstFloorImage, Property=Height}">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*">
+                        </ColumnDefinition>
+                        <ColumnDefinition Width="*">
+                        </ColumnDefinition>
+                        <ColumnDefinition Width="*">
+                        </ColumnDefinition>
 
-                            <ColumnDefinition Width="*">
-                            </ColumnDefinition>
-                            <ColumnDefinition Width="*">
-                            </ColumnDefinition>
-                            <ColumnDefinition Width="*">
-                            </ColumnDefinition>
+                        <ColumnDefinition Width="*">
+                        </ColumnDefinition>
+                        <ColumnDefinition Width="*">
+                        </ColumnDefinition>
+                        <ColumnDefinition Width="*">
+                        </ColumnDefinition>
 
-                            <ColumnDefinition Width="*">
-                            </ColumnDefinition>
-                            <ColumnDefinition Width="*">
-                            </ColumnDefinition>
-                            <ColumnDefinition Width="*">
-                            </ColumnDefinition>
-                            <ColumnDefinition Width="*">
-                            </ColumnDefinition>
-                            <ColumnDefinition Width="*">
-                            </ColumnDefinition>
-                            <ColumnDefinition Width="*">
-                            </ColumnDefinition>
-                            <ColumnDefinition Width="*">
-                            </ColumnDefinition>
-                            <ColumnDefinition Width="*">
-                            </ColumnDefinition>
-                            <ColumnDefinition Width="*">
-                            </ColumnDefinition>
-                            <ColumnDefinition Width="*">
-                            </ColumnDefinition>
-                            <ColumnDefinition Width="*">
-                            </ColumnDefinition>
-                            <ColumnDefinition Width="*">
-                            </ColumnDefinition>
-                            <ColumnDefinition Width="*">
-                            </ColumnDefinition>
-                            <ColumnDefinition Width="*">
-                            </ColumnDefinition>
-                        </Grid.ColumnDefinitions>
-                        <Button Text="Kitchen"
-                                Grid.Row="2"
-                                Grid.Column="8"
-                                Grid.ColumnSpan="2"
-                                Grid.RowSpan="3"
-                                Opacity="{Binding OpacityDebugging}">
-                        </Button>
+                        <ColumnDefinition Width="*">
+                        </ColumnDefinition>
+                        <ColumnDefinition Width="*">
+                        </ColumnDefinition>
+                        <ColumnDefinition Width="*">
+                        </ColumnDefinition>
 
-                        <Button Text="Living Room"
-                                Grid.Row="2"
-                                Grid.Column="10"
-                                Grid.ColumnSpan="7"
-                                Grid.RowSpan="2"
-                                Opacity="{Binding OpacityDebugging}">
-                        </Button>
-
-                        <Button Text="Living Room"
-                                Grid.Row="4"
-                                Grid.Column="10"
-                                Grid.ColumnSpan="2"
-                                Opacity="{Binding OpacityDebugging}">
-                        </Button>
-
-                        <Button Text="Living Room"
-                                Grid.Row="4"
-                                Grid.Column="14"
+                        <ColumnDefinition Width="*">
+                        </ColumnDefinition>
+                        <ColumnDefinition Width="*">
+                        </ColumnDefinition>
+                        <ColumnDefinition Width="*">
+                        </ColumnDefinition>
+                        <ColumnDefinition Width="*">
+                        </ColumnDefinition>
+                        <ColumnDefinition Width="*">
+                        </ColumnDefinition>
+                        <ColumnDefinition Width="*">
+                        </ColumnDefinition>
+                        <ColumnDefinition Width="*">
+                        </ColumnDefinition>
+                        <ColumnDefinition Width="*">
+                        </ColumnDefinition>
+                        <ColumnDefinition Width="*">
+                        </ColumnDefinition>
+                        <ColumnDefinition Width="*">
+                        </ColumnDefinition>
+                        <ColumnDefinition Width="*">
+                        </ColumnDefinition>
+                        <ColumnDefinition Width="*">
+                        </ColumnDefinition>
+                        <ColumnDefinition Width="*">
+                        </ColumnDefinition>
+                        <ColumnDefinition Width="*">
+                        </ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Button Text="Kitchen"
+                                Grid.Row="3"
+                                Grid.Column="7"
                                 Grid.ColumnSpan="3"
-                                Grid.RowSpan="2"
+                                Grid.RowSpan="4"
                                 Opacity="{Binding OpacityDebugging}">
-                        </Button>
+                    </Button>
 
-                        <Button Text="Bed room"
-                                Grid.Row="5"
-                                Grid.Column="8"
-                                Grid.ColumnSpan="3"
-                                Grid.RowSpan="3"
-                                Opacity="{Binding OpacityDebugging}">
-                        </Button>
-
-                        <Button Text="Xestra"
-                                Grid.Row="4"
-                                Grid.Column="12"
-                                Grid.ColumnSpan="2"
-                                Opacity="{Binding OpacityDebugging}">
-                        </Button>
-                        <Button Text="Xestra"
-                                Grid.Row="5"
-                                Grid.Column="11"
-                                Grid.ColumnSpan="3"
-                                Opacity="{Binding OpacityDebugging}">
-                        </Button>
-                        <Button Text="Xestra"
-                                Grid.Row="6"
-                                Grid.Column="11"
-                                Grid.ColumnSpan="2"
-                                Opacity="{Binding OpacityDebugging}">
-                        </Button>
-
-                        <Button Text="Closet"
+                    <Button Text="Bed room"
                                 Grid.Row="7"
-                                Grid.Column="11"
-                                Grid.ColumnSpan="3"
+                                Grid.Column="7"
+                                Grid.ColumnSpan="4"
+                                Grid.RowSpan="5"
                                 Opacity="{Binding OpacityDebugging}">
-                        </Button>
+                    </Button>
 
-                        <Button Text="Grage"
-                                Grid.Row="6"
-                                Grid.Column="14"
+                    <Button Text="Living Room"
+                                Grid.Row="3"
+                                Grid.Column="10"
                                 Grid.ColumnSpan="5"
+                                Grid.RowSpan="3"
+                                Opacity="{Binding OpacityDebugging}">
+                    </Button>
+                    <Button Text="Living Room"
+                                Grid.Row="3"
+                                Grid.Column="15"
+                                Grid.ColumnSpan="4"
+                                Grid.RowSpan="5"
+                                Opacity="{Binding OpacityDebugging}">
+                    </Button>
+
+                    <Button Text="Hallway"
+                                Grid.Row="6"
+                                Grid.Column="13"
+                                Grid.ColumnSpan="2"
+                                Grid.RowSpan="3"
+                                Opacity="{Binding OpacityDebugging}">
+                    </Button>
+
+                    <Button Text="Xestra"
+                                Grid.Row="6"
+                                Grid.Column="11"
+                                Grid.ColumnSpan="2"
+                                Grid.RowSpan="4"
+                                Opacity="{Binding OpacityDebugging}">
+                    </Button>
+                    
+                    <Button Text="Closet"
+                                Grid.Row="10"
+                                Grid.Column="11"
+                                Grid.ColumnSpan="4"
                                 Grid.RowSpan="2"
                                 Opacity="{Binding OpacityDebugging}">
-                        </Button>
-                    </Grid>
+                    </Button>
+
+                    <Button Text="Grage"
+                                Grid.Row="8"
+                                Grid.Column="15"
+                                Grid.ColumnSpan="5"
+                                Grid.RowSpan="4"
+                                Opacity="{Binding OpacityDebugging}">
+                    </Button>
                 </Grid>
             </RelativeLayout>
         </StackLayout>
