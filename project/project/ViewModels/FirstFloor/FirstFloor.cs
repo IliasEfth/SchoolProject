@@ -1,4 +1,5 @@
 ﻿using Prism.Commands;
+using project.Models;
 using project.Models.Room;
 using System;
 using System.Collections.Generic;
@@ -9,25 +10,17 @@ namespace project.ViewModels.FirstFloor
 {
     public class FirstFloor : BindableObject
     {
+        public DebugHelper debug { get; private set; }
         private Room previousGoBackState;
         public FirstFloor()
         {
-            debugging = true;
+            debug = new DebugHelper();
             GoToKitchen = new DelegateCommand(gotokitchenAction, () => true);
             GoBack = new DelegateCommand(goBack, () => true);
             OpenCloseLights = new DelegateCommand(openCloseLights, () => true);
             this.ShowMainPageGrid = true;
             //else buttons to false
             Kitchen = new Room();
-        }
-        private bool debugging;
-        public double OpacityDebugging
-        {
-            get => debugging ? 1 : 0;
-            set
-            {
-                OnPropertyChanged("OpacityDebugging");
-            }
         }
         public DelegateCommand GoToKitchen { get; private set; }
         public DelegateCommand GoBack { get; private set; }
