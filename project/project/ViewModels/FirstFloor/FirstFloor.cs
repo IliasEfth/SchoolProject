@@ -28,6 +28,7 @@ namespace project.ViewModels.FirstFloor
             GoToBathRoom = new DelegateCommand(gotoBathRoomAction, () => true);
             GoToCloset = new DelegateCommand(gotoClosetAction, () => true);
             GoToGarage = new DelegateCommand(gotoGarageAction, () => true);
+            Help = new DelegateCommand(helpAction, () => true);
             #endregion
 
             this.ShowMainPageGrid = true;
@@ -52,6 +53,7 @@ namespace project.ViewModels.FirstFloor
         public DelegateCommand GoToCloset { get; private set; }
         public DelegateCommand GoToGarage { get; private set; }
         public DelegateCommand GoToSecondFloor { get; private set; }
+        public DelegateCommand Help { get; private set; }
         #region grid properties
         private bool showGrid;
         public bool ShowMainPageGrid
@@ -188,6 +190,18 @@ namespace project.ViewModels.FirstFloor
             this.ShowMainPageGrid = false;
             this.Garage.IsVisible = true;
             previousGoBackState = this.Garage;
+        }
+
+        private async void helpAction()
+        {
+            if (this.HideMainPageGrid)
+            {
+                await App.Current.MainPage.DisplayAlert(null, "Για να ανάψετε / σβήσετε τα φώτα πρέπει να πατήσεται πάνω σε κάποια λάμπα ή στον διακόπτη εάν υπάρχει", "Κατάλαβα");
+            }
+            else
+            {
+                await App.Current.MainPage.DisplayAlert(null, "Για να δείτε και να αλληλεπιδράσετε με κάποιο δομάτιο πρέπει να πατήσεται πάνω στο όνομα του δωματίου", "Κατάλαβα");
+            }
         }
     }
 }

@@ -32,7 +32,7 @@
                         IsVisible="{Binding HideMainPageGrid}">
                 </Button>
                 <Button Text="Help" 
-                        Command="{Binding Click}"
+                        Command="{Binding Help}"
                         HorizontalOptions="End"
                         BackgroundColor="White"
                         TextColor="Black"
@@ -1496,6 +1496,14 @@
                             Opacity="{Binding debug.OpacityDebugging}"
                             Command="{Binding OpenCloseLights}">
                     </Button>
+                    <Button Text="BedRoom"
+                            Grid.Row="6"
+                            Grid.Column="17"
+                            Grid.ColumnSpan="2"
+                            Grid.RowSpan="2"
+                            Opacity="{Binding debug.OpacityDebugging}"
+                            Command="{Binding OpenCloseLights}">
+                    </Button>
                 </Grid>
 
                 <Grid IsVisible="{Binding LivingRoom.LightsAreOn}"
@@ -1610,6 +1618,14 @@
                             Grid.Column="6"
                             Grid.RowSpan="2"
                             Grid.ColumnSpan="2"
+                            Opacity="{Binding debug.OpacityDebugging}"
+                            Command="{Binding OpenCloseLights}">
+                    </Button>
+                    <Button Text="BedRoom"
+                            Grid.Row="6"
+                            Grid.Column="17"
+                            Grid.ColumnSpan="2"
+                            Grid.RowSpan="2"
                             Opacity="{Binding debug.OpacityDebugging}"
                             Command="{Binding OpenCloseLights}">
                     </Button>
