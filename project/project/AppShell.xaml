@@ -11,17 +11,17 @@
         <ShellContent ContentTemplate="{DataTemplate local:LoginPage}"></ShellContent>
     </ShellItem>-->
     <FlyoutItem Title="1st floor" Icon="{Binding Source={images:EmbeddedImagesHelper project.Assets.HomeIcon.png}}">
-        <Tab Route="MainPage">
+        <Tab Route="FirstFloor">
             <ShellContent ContentTemplate="{DataTemplate local:MainPage}"></ShellContent>
         </Tab>
     </FlyoutItem>
     <FlyoutItem Title="2nd floor" Icon="{Binding Source={images:EmbeddedImagesHelper project.Assets.stairs.jpg}}">
-        <Tab Route="Page1">
+        <Tab Route="SecondFloor">
             <ShellContent ContentTemplate="{DataTemplate local:Page1}"></ShellContent>
         </Tab>
     </FlyoutItem>
     <FlyoutItem Title="Exit" Icon="{Binding Source={images:EmbeddedImagesHelper project.Assets.exit.png}}">
-        <Tab Route="Page1">
+        <Tab Route="Exit">
             <ShellContent ContentTemplate="{DataTemplate local:LoginPage}"></ShellContent>
         </Tab>
     </FlyoutItem>

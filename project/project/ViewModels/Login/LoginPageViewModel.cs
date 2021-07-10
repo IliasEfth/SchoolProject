@@ -62,7 +62,7 @@ namespace project.ViewModels
             var value = loginService.ValidateUser(Login);
             if (value)
             {
-                await Shell.Current.GoToAsync("//MainPage");
+                await Shell.Current.GoToAsync("//FirstFloor");
             }
             else
             {

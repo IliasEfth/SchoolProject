@@ -14,18 +14,45 @@ namespace project.ViewModels.FirstFloor
         private Room previousGoBackState;
         public FirstFloor()
         {
+            #region debug information
             debug = new DebugHelper();
-            GoToKitchen = new DelegateCommand(gotokitchenAction, () => true);
-            GoBack = new DelegateCommand(goBack, () => true);
-            OpenCloseLights = new DelegateCommand(openCloseLights, () => true);
+            #endregion
+
+            #region commands
+            GoToKitchen = new DelegateCommand(gotokitchenAction, () => true);//done
+            GoBack = new DelegateCommand(goBack, () => true);//done
+            OpenCloseLights = new DelegateCommand(openCloseLights, () => true);//done
+            GoToBedRoom = new DelegateCommand(gotoBedRoomAction, () => true);
+            GoToLivingRoom = new DelegateCommand(gotoLivingRoomAction, () => true);
+            GoToHallway = new DelegateCommand(gotoHallwayAction, () => true);
+            GoToBathRoom = new DelegateCommand(gotoBathRoomAction, () => true);
+            GoToCloset = new DelegateCommand(gotoClosetAction, () => true);
+            GoToGarage = new DelegateCommand(gotoGarageAction, () => true);
+            #endregion
+
             this.ShowMainPageGrid = true;
-            //else buttons to false
+
+            #region rooms
             Kitchen = new Room();
+            BedRoom = new Room();
+            LivingRoom = new Room();
+            BathRoom = new Room();
+            Closet = new Room();
+            Garage = new Room();
+            #endregion
         }
+        //commands
         public DelegateCommand GoToKitchen { get; private set; }
         public DelegateCommand GoBack { get; private set; }
         public DelegateCommand OpenCloseLights { get; private set; }
-        //we start here
+        public DelegateCommand GoToBedRoom { get; private set; }
+        public DelegateCommand GoToLivingRoom { get; private set; }
+        public DelegateCommand GoToHallway { get; private set; }
+        public DelegateCommand GoToBathRoom { get; private set; }
+        public DelegateCommand GoToCloset { get; private set; }
+        public DelegateCommand GoToGarage { get; private set; }
+        public DelegateCommand GoToSecondFloor { get; private set; }
+        #region grid properties
         private bool showGrid;
         public bool ShowMainPageGrid
         {
@@ -41,6 +68,9 @@ namespace project.ViewModels.FirstFloor
         {
             get => !this.showGrid;
         }
+        #endregion
+
+        #region rooms
         private Room kitchen;
         public Room Kitchen
         {
@@ -51,13 +81,64 @@ namespace project.ViewModels.FirstFloor
                 OnPropertyChanged("Kitchen");
             }
         }
-
+        private Room bedRoom;
+        public Room BedRoom
+        {
+            get => bedRoom;
+            set
+            {
+                bedRoom = value;
+                OnPropertyChanged("BedRoom");
+            }
+        }
+        private Room livingRoom;
+        public Room LivingRoom
+        {
+            get => livingRoom;
+            set
+            {
+                livingRoom = value;
+                OnPropertyChanged("LivingRoom");
+            }
+        }
+        private Room bathRoom;
+        public Room BathRoom
+        {
+            get => bathRoom;
+            set
+            {
+                bathRoom = value;
+                OnPropertyChanged("BathRoom");
+            }
+        }
+        private Room closet;
+        public Room Closet
+        {
+            get => closet;
+            set
+            {
+                closet = value;
+                OnPropertyChanged("Closet");
+            }
+        }
+        private Room garage;
+        public Room Garage
+        {
+            get => garage;
+            set
+            {
+                garage = value;
+                OnPropertyChanged("Garage");
+            }
+        }
+        #endregion
         private async void gotokitchenAction()
         {
             this.ShowMainPageGrid = false;
             this.Kitchen.IsVisible = true;
             previousGoBackState = this.Kitchen;
         }
+
         private async void goBack()
         {
             previousGoBackState.IsVisible = false;
@@ -67,6 +148,46 @@ namespace project.ViewModels.FirstFloor
         private async void openCloseLights()
         {
             previousGoBackState.OnLights = !previousGoBackState.OnLights;
+        }
+
+        private async void gotoBedRoomAction()
+        {
+            this.ShowMainPageGrid = false;
+            this.BedRoom.IsVisible = true;
+            previousGoBackState = this.BedRoom;
+        }
+
+        private async void gotoLivingRoomAction()
+        {
+            this.ShowMainPageGrid = false;
+            this.LivingRoom.IsVisible = true;
+            previousGoBackState = this.LivingRoom;
+        }
+
+        private async void gotoHallwayAction()
+        {
+            await Shell.Current.GoToAsync("//SecondFloor");
+        }
+
+        private async void gotoBathRoomAction()
+        {
+            this.ShowMainPageGrid = false;
+            this.BathRoom.IsVisible = true;
+            previousGoBackState = this.BathRoom;
+        }
+
+        private async void gotoClosetAction()
+        {
+            this.ShowMainPageGrid = false;
+            this.Closet.IsVisible = true;
+            previousGoBackState = this.Closet;
+        }
+
+        private async void gotoGarageAction()
+        {
+            this.ShowMainPageGrid = false;
+            this.Garage.IsVisible = true;
+            previousGoBackState = this.Garage;
         }
     }
 }

@@ -34,6 +34,8 @@
     <None Remove="rooms\guest_room_light.jpg" />
     <None Remove="rooms\kitchen_dark.jpg" />
     <None Remove="rooms\kitchen_light2.jpg" />
+    <None Remove="rooms\living_room_dark.jpg" />
+    <None Remove="rooms\living_room_light.jpg" />
     <None Remove="rooms\preview1.jpg" />
     <None Remove="rooms\preview2.jpg" />
   </ItemGroup>
@@ -63,6 +65,8 @@
     <EmbeddedResource Include="rooms\guest_room_light.jpg" />
     <EmbeddedResource Include="rooms\kitchen_dark.jpg" />
     <EmbeddedResource Include="rooms\kitchen_light2.jpg" />
+    <EmbeddedResource Include="rooms\living_room_dark.jpg" />
+    <EmbeddedResource Include="rooms\living_room_light.jpg" />
     <EmbeddedResource Include="rooms\preview1.jpg" />
     <EmbeddedResource Include="rooms\preview2.jpg" />
   </ItemGroup>
