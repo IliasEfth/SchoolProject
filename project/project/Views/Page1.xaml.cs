@@ -16,7 +16,7 @@ namespace project.Views
         public Page1()
         {
             InitializeComponent();
-            BindingContext = new FirstFloor();
+            //BindingContext = new FirstFloor();
         }
     }
 }

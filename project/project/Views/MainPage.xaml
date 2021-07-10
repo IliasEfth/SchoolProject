@@ -6,21 +6,49 @@
              x:Class="project.Views.MainPage">
     <ContentPage.Content>
         <StackLayout>
-            <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*">
+                    </RowDefinition>
+                    <RowDefinition Height="*">
+                    </RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*">
+                    </ColumnDefinition>
+                    <ColumnDefinition Width="*">
+                    </ColumnDefinition>
+                    <ColumnDefinition Width="*">
+                    </ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Button Text="Back" 
+                        Command="{Binding GoBack}"
+                        HorizontalOptions="Start"
+                        BackgroundColor="White"
+                        TextColor="Black"
+                        FontSize="15"
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        IsVisible="{Binding HideMainPageGrid}">
+                </Button>
                 <Button Text="Help" 
-                            Command="{Binding Click}"
-                            HorizontalOptions="End"
-                            BackgroundColor="White"
-                            TextColor="Black"
-                            FontSize="15">
+                        Command="{Binding Click}"
+                        HorizontalOptions="End"
+                        BackgroundColor="White"
+                        TextColor="Black"
+                        FontSize="15"
+                        Grid.Row="0"
+                        Grid.Column="2">
                 </Button>
                 <Label Text="Welcome to the 1st floor" 
-                           HorizontalOptions="Center"
-                           TextColor="Coral"
-                           FontSize="25">
+                       HorizontalOptions="Center"
+                       TextColor="Coral"
+                       FontSize="25"
+                       Grid.Row="1"
+                       Grid.Column="1">
                 </Label>
-            </StackLayout>
-            <RelativeLayout>
+            </Grid>
+            <RelativeLayout IsVisible="{Binding ShowMainPageGrid}">
                 <Image Source="{images:EmbeddedImagesHelper project.rooms.preview1.jpg}"
                        Aspect="Fill"
                        HorizontalOptions="Center"
@@ -117,11 +145,12 @@
                         </ColumnDefinition>
                     </Grid.ColumnDefinitions>
                     <Button Text="Kitchen"
-                                Grid.Row="3"
-                                Grid.Column="7"
-                                Grid.ColumnSpan="3"
-                                Grid.RowSpan="4"
-                                Opacity="{Binding OpacityDebugging}">
+                            Grid.Row="3"
+                            Grid.Column="7"
+                            Grid.ColumnSpan="3"
+                            Grid.RowSpan="4"
+                            Opacity="{Binding OpacityDebugging}"
+                            Command="{Binding GoToKitchen}">
                     </Button>
 
                     <Button Text="Bed room"
@@ -162,7 +191,7 @@
                                 Grid.RowSpan="4"
                                 Opacity="{Binding OpacityDebugging}">
                     </Button>
-                    
+
                     <Button Text="Closet"
                                 Grid.Row="10"
                                 Grid.Column="11"
@@ -179,6 +208,123 @@
                                 Opacity="{Binding OpacityDebugging}">
                     </Button>
                 </Grid>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout x:Name="Kitchen"
+                            IsVisible="{Binding Kitchen.IsVisible}">
+
+                <Image Source="{images:EmbeddedImagesHelper project.rooms.kitchen_dark.jpg}"
+                       Aspect="Fill"
+                       HorizontalOptions="Center"
+                       RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                       x:Name="kitchenImageOff"
+                       IsVisible="{Binding Kitchen.LightsAreNotOn}"/>
+
+                <Image Source="{images:EmbeddedImagesHelper project.rooms.kitchen_light2.jpg}"
+                       Aspect="Fill"
+                       HorizontalOptions="Center"
+                       RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                       x:Name="kitchenImageOn"
+                       IsVisible="{Binding Kitchen.LightsAreOn}"/>
+
+                <Button Command="{Binding OpenCloseLights}">
+                </Button>
+
+                <Grid IsVisible="{Binding Kitchen.LightsAreNotOn}"
+                      RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=kitchenImageOff, Property=X}"
+                      RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=kitchenImageOff, Property=Y}"
+                      RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToView, ElementName=kitchenImageOff, Property=Width}"
+                      RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToView, ElementName=kitchenImageOff, Property=Height}">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+                        <RowDefinition Height="*">
+                        </RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*">
+                        </ColumnDefinition>
+                        <ColumnDefinition Width="*">
+                        </ColumnDefinition>
+                        <ColumnDefinition Width="*">
+                        </ColumnDefinition>
+
+                        <ColumnDefinition Width="*">
+                        </ColumnDefinition>
+                        <ColumnDefinition Width="*">
+                        </ColumnDefinition>
+                        <ColumnDefinition Width="*">
+                        </ColumnDefinition>
+
+                        <ColumnDefinition Width="*">
+                        </ColumnDefinition>
+                        <ColumnDefinition Width="*">
+                        </ColumnDefinition>
+                        <ColumnDefinition Width="*">
+                        </ColumnDefinition>
+
+                        <ColumnDefinition Width="*">
+                        </ColumnDefinition>
+                        <ColumnDefinition Width="*">
+                        </ColumnDefinition>
+                        <ColumnDefinition Width="*">
+                        </ColumnDefinition>
+                        <ColumnDefinition Width="*">
+                        </ColumnDefinition>
+                        <ColumnDefinition Width="*">
+                        </ColumnDefinition>
+                        <ColumnDefinition Width="*">
+                        </ColumnDefinition>
+                        <ColumnDefinition Width="*">
+                        </ColumnDefinition>
+                        <ColumnDefinition Width="*">
+                        </ColumnDefinition>
+                        <ColumnDefinition Width="*">
+                        </ColumnDefinition>
+                        <ColumnDefinition Width="*">
+                        </ColumnDefinition>
+                        <ColumnDefinition Width="*">
+                        </ColumnDefinition>
+                        <ColumnDefinition Width="*">
+                        </ColumnDefinition>
+                        <ColumnDefinition Width="*">
+                        </ColumnDefinition>
+                        <ColumnDefinition Width="*">
+                        </ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                </Grid>
+
+
             </RelativeLayout>
         </StackLayout>
 
