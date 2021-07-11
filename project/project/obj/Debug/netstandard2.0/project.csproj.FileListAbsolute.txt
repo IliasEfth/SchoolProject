@@ -32,3 +32,5 @@ C:\Users\Ion\Source\Repos\SchoolProject\project\project\obj\Debug\netstandard2.0
 C:\Users\Ion\source\repos\SchoolProject\project\project\obj\Debug\netstandard2.0\project.csproj.AssemblyReference.cache
 C:\Users\Ion\source\repos\SchoolProject\project\project\obj\Debug\netstandard2.0\Views\Page1.xaml.g.cs
 C:\Users\hlias\Desktop\Ilias\Alilepidrasi\project\project\project\obj\Debug\netstandard2.0\Views\Page1.xaml.g.cs
+C:\Users\hlias\Desktop\Ilias\Alilepidrasi\project\project\project\bin\Debug\netstandard2.0\Windows.Foundation.UniversalApiContract.winmd
+C:\Users\hlias\Desktop\Ilias\Alilepidrasi\project\project\project\obj\Debug\netstandard2.0\project.csproj.CopyComplete
