@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "T+RwxEhMG5EGIXi1z6Q7cD56Nz+Ht1gmhwwZP+o94V6pJrwkGgacycrqgyNV/OND4DSV+57DTNsOElFUMor3qw==",
+  "dgSpecHash": "CF+q0nG6XdlD9iDuD3FxsuWIXFiwsea2RLK/0Wzk02ffbdFyO+MGNB5wV5rlGzViqbZC6vzzLqfSFefyRwISKQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ion\\Documents\\GitHub\\SchoolProject\\project\\project.Android\\project.Android.csproj",
+  "projectFilePath": "C:\\Users\\hlias\\Desktop\\Ilias\\Alilepidrasi\\project\\project\\project.Android\\project.Android.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Ion\\.nuget\\packages\\prism.core\\8.0.0.1909\\prism.core.8.0.0.1909.nupkg.sha512",
-    "C:\\Users\\Ion\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\hlias\\.nuget\\packages\\prism.core\\8.0.0.1909\\prism.core.8.0.0.1909.nupkg.sha512",
+    "C:\\Users\\hlias\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.activity\\1.1.0.5\\xamarin.androidx.activity.1.1.0.5.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.annotation\\1.1.0.8\\xamarin.androidx.annotation.1.1.0.8.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.annotation.experimental\\1.0.0.8\\xamarin.androidx.annotation.experimental.1.0.0.8.nupkg.sha512",

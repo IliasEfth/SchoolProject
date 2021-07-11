@@ -8,7 +8,7 @@
     <ContentPage.Content>
         <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
             <StackLayout>
-                <Image Source="{images:EmbeddedImagesHelper project.Assets.Login.png}"
+                <Image Source="{images:EmbeddedImagesHelper project.Assets.Logo.PNG}"
                        Aspect="Fill"
                        HorizontalOptions="Center"/>
             </StackLayout>

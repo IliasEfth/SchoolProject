@@ -16,6 +16,7 @@ namespace project.Models
                 OnPropertyChanged("OpacityDebugging");
             }
         }
+
         static DebugHelper()
         {
             debugging = false;  //set to 'true' for 'behind the scenes'

@@ -14,6 +14,7 @@
     <None Remove="Assets\HomeIcon.png" />
     <None Remove="Assets\Locker.png" />
     <None Remove="Assets\Login.png" />
+    <None Remove="Assets\Logo.PNG" />
     <None Remove="Assets\SimpleHomeIcon.png" />
     <None Remove="Assets\stairs.jpg" />
     <None Remove="Assets\stairs.png" />
@@ -55,6 +56,7 @@
     <EmbeddedResource Include="Assets\HomeIcon.png" />
     <EmbeddedResource Include="Assets\Locker.png" />
     <EmbeddedResource Include="Assets\Login.png" />
+    <EmbeddedResource Include="Assets\Logo.PNG" />
     <EmbeddedResource Include="Assets\SimpleHomeIcon.png" />
     <EmbeddedResource Include="Assets\stairs.png" />
     <EmbeddedResource Include="Assets\UnLocker.png" />
