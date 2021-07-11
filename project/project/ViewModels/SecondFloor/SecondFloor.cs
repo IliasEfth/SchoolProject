@@ -6,13 +6,13 @@ using System.Collections.Generic;
 using System.Text;
 using Xamarin.Forms;
 
-namespace project.ViewModels.FirstFloor
+namespace project.ViewModels.SecondFloor
 {
-    public class FirstFloor : BindableObject
+    public class SecondFloor : BindableObject
     {
         public DebugHelper debug { get; private set; }
         private Room previousGoBackState;
-        public FirstFloor()
+        public SecondFloor()
         {
             #region debug information
             debug = new DebugHelper();
@@ -22,58 +22,56 @@ namespace project.ViewModels.FirstFloor
             GoBack = new DelegateCommand(goBack, () => true);
             OpenCloseLights = new DelegateCommand<object>(openCloseLights, (_) => true);
             Help = new DelegateCommand(helpAction, () => true);
-            GoTo = new DelegateCommand<object>(goToAction,(_)=>true);
-            GoToSecondFloor = new DelegateCommand(gotoHallwayAction, () => true);
+            GoTo = new DelegateCommand<object>(goToAction, (_) => true);
             #endregion
 
             #region grid params
-            this.ShowMainPageGrid = true;
+            this.ShowPage1Grid = true;
             #endregion
 
             #region rooms
-            Kitchen = new Room();
+            GuestRoom = new Room();
             BedRoom = new Room();
-            LivingRoom = new Room();
+            Hallway = new Room();
             BathRoom = new Room();
-            Closet = new Room();
-            Garage = new Room();
+            LaundryRoom = new Room();
+            Office = new Room();
             #endregion
         }
         #region commands
         public DelegateCommand GoBack { get; private set; }
         public DelegateCommand<object> OpenCloseLights { get; private set; }
         public DelegateCommand<object> GoTo { get; private set; }
-        public DelegateCommand GoToSecondFloor { get; private set; }
         public DelegateCommand Help { get; private set; }
         #endregion
 
         #region grid properties
         private bool showGrid;
-        public bool ShowMainPageGrid
+        public bool ShowPage1Grid
         {
             get => showGrid;
             set
             {
                 showGrid = value;
-                OnPropertyChanged("ShowMainPageGrid");
-                OnPropertyChanged("HideMainPageGrid");
+                OnPropertyChanged("ShowPage1Grid");
+                OnPropertyChanged("HidePage1Grid");
             }
         }
-        public bool HideMainPageGrid
+        public bool HidePage1Grid
         {
             get => !this.showGrid;
         }
         #endregion
 
         #region rooms
-        private Room kitchen;
-        public Room Kitchen
+        private Room guestRoom;
+        public Room GuestRoom
         {
-            get => kitchen;
+            get => guestRoom;
             set
             {
-                kitchen = value;
-                OnPropertyChanged("Kitchen");
+                guestRoom = value;
+                OnPropertyChanged("GuestRoom");
             }
         }
         private Room bedRoom;
@@ -86,14 +84,14 @@ namespace project.ViewModels.FirstFloor
                 OnPropertyChanged("BedRoom");
             }
         }
-        private Room livingRoom;
-        public Room LivingRoom
+        private Room hallway;
+        public Room Hallway
         {
-            get => livingRoom;
+            get => hallway;
             set
             {
-                livingRoom = value;
-                OnPropertyChanged("LivingRoom");
+                hallway = value;
+                OnPropertyChanged("Hallway");
             }
         }
         private Room bathRoom;
@@ -106,24 +104,24 @@ namespace project.ViewModels.FirstFloor
                 OnPropertyChanged("BathRoom");
             }
         }
-        private Room closet;
-        public Room Closet
+        private Room laundryRoom;
+        public Room LaundryRoom
         {
-            get => closet;
+            get => laundryRoom;
             set
             {
-                closet = value;
-                OnPropertyChanged("Closet");
+                laundryRoom = value;
+                OnPropertyChanged("LaundryRoom");
             }
         }
-        private Room garage;
-        public Room Garage
+        private Room office;
+        public Room Office
         {
-            get => garage;
+            get => office;
             set
             {
-                garage = value;
-                OnPropertyChanged("Garage");
+                office = value;
+                OnPropertyChanged("Office");
             }
         }
         #endregion
@@ -131,7 +129,7 @@ namespace project.ViewModels.FirstFloor
         private async void goBack()
         {
             previousGoBackState.IsVisible = false;
-            this.ShowMainPageGrid = true;
+            this.ShowPage1Grid = true;
         }
 
         private async void openCloseLights(object room)
@@ -142,14 +140,9 @@ namespace project.ViewModels.FirstFloor
             r.OnLights = !r.OnLights;
         }
 
-        private async void gotoHallwayAction()
-        {
-            await Shell.Current.GoToAsync("//SecondFloor");
-        }
-
         private async void helpAction()
         {
-            if (this.HideMainPageGrid)
+            if (this.HidePage1Grid)
             {
                 await App.Current.MainPage.DisplayAlert(null, "Για να ανάψετε/σβήσετε τα φώτα πρέπει να πατήσετε πάνω σε κάποια λάμπα ή στον διακόπτη, εάν υπάρχει", "Κατάλαβα");
             }
@@ -164,7 +157,7 @@ namespace project.ViewModels.FirstFloor
             Room r = room as Room;
             if (r == null)
                 return;
-            this.ShowMainPageGrid = false;
+            this.ShowPage1Grid = false;
             r.IsVisible = true;
             previousGoBackState = r;
         }

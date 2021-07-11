@@ -18,7 +18,7 @@ namespace project.Models
         }
         static DebugHelper()
         {
-            debugging = true;
+            debugging = false;  //set to 'true' for 'behind the scenes'
         }
     }
 }

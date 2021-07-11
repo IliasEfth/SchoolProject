@@ -10,8 +10,8 @@ namespace project.Services
 {
     public class LoginValidatorService : ILoginValidatorService
     {
-        private string username = "1";   //test
-        private string password = "1";   //testerakos123
+        private string username = "user";   
+        private string password = "user1234";   
         public bool ValidateUser(ILoginModel user)
         {
             if(!(string.IsNullOrWhiteSpace(user.UserName.Value) && string.IsNullOrWhiteSpace(user.PassWord.Value))

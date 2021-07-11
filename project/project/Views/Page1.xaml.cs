@@ -1,4 +1,4 @@
-﻿using project.ViewModels.FirstFloor;
+﻿using project.ViewModels.SecondFloor;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,7 +16,7 @@ namespace project.Views
         public Page1()
         {
             InitializeComponent();
-            //BindingContext = new FirstFloor();
+            BindingContext = new SecondFloor();
         }
     }
 }

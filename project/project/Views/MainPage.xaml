@@ -101,21 +101,18 @@
                         </ColumnDefinition>
                         <ColumnDefinition Width="*">
                         </ColumnDefinition>
-
                         <ColumnDefinition Width="*">
                         </ColumnDefinition>
                         <ColumnDefinition Width="*">
                         </ColumnDefinition>
                         <ColumnDefinition Width="*">
                         </ColumnDefinition>
-
                         <ColumnDefinition Width="*">
                         </ColumnDefinition>
                         <ColumnDefinition Width="*">
                         </ColumnDefinition>
                         <ColumnDefinition Width="*">
                         </ColumnDefinition>
-
                         <ColumnDefinition Width="*">
                         </ColumnDefinition>
                         <ColumnDefinition Width="*">
@@ -193,7 +190,7 @@
                             Command="{Binding GoToSecondFloor}">
                     </Button>
 
-                    <Button Text="Xestra"
+                    <Button Text="Bathroom"
                                 Grid.Row="6"
                                 Grid.Column="11"
                                 Grid.ColumnSpan="2"
@@ -209,8 +206,8 @@
                                 Grid.ColumnSpan="4"
                                 Grid.RowSpan="2"
                                 Opacity="{Binding debug.OpacityDebugging}"
-                            Command="{Binding GoToCloset}"
-                            CommandParameter="{Binding Closet}">
+                                Command="{Binding GoTo}"
+                                CommandParameter="{Binding Closet}">
                     </Button>
 
                     <Button Text="Grage"
@@ -290,21 +287,18 @@
                         </ColumnDefinition>
                         <ColumnDefinition Width="*">
                         </ColumnDefinition>
-
                         <ColumnDefinition Width="*">
                         </ColumnDefinition>
                         <ColumnDefinition Width="*">
                         </ColumnDefinition>
                         <ColumnDefinition Width="*">
                         </ColumnDefinition>
-
                         <ColumnDefinition Width="*">
                         </ColumnDefinition>
                         <ColumnDefinition Width="*">
                         </ColumnDefinition>
                         <ColumnDefinition Width="*">
                         </ColumnDefinition>
-
                         <ColumnDefinition Width="*">
                         </ColumnDefinition>
                         <ColumnDefinition Width="*">
@@ -400,21 +394,18 @@
                         </ColumnDefinition>
                         <ColumnDefinition Width="*">
                         </ColumnDefinition>
-
                         <ColumnDefinition Width="*">
                         </ColumnDefinition>
                         <ColumnDefinition Width="*">
                         </ColumnDefinition>
                         <ColumnDefinition Width="*">
                         </ColumnDefinition>
-
                         <ColumnDefinition Width="*">
                         </ColumnDefinition>
                         <ColumnDefinition Width="*">
                         </ColumnDefinition>
                         <ColumnDefinition Width="*">
                         </ColumnDefinition>
-
                         <ColumnDefinition Width="*">
                         </ColumnDefinition>
                         <ColumnDefinition Width="*">

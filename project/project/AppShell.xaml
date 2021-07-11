@@ -6,16 +6,16 @@
        Title="project"
        x:Class="project.AppShell">
 
-    <!--<ShellItem Route="Login" 
+    <ShellItem Route="Login" 
                FlyoutItemIsVisible="False">
         <ShellContent ContentTemplate="{DataTemplate local:LoginPage}"></ShellContent>
-    </ShellItem>-->
+    </ShellItem>
     <FlyoutItem Title="1st floor" Icon="{Binding Source={images:EmbeddedImagesHelper project.Assets.HomeIcon.png}}">
         <Tab Route="FirstFloor">
             <ShellContent ContentTemplate="{DataTemplate local:MainPage}"></ShellContent>
         </Tab>
     </FlyoutItem>
-    <FlyoutItem Title="2nd floor" Icon="{Binding Source={images:EmbeddedImagesHelper project.Assets.stairs.jpg}}">
+    <FlyoutItem Title="2nd floor" Icon="{Binding Source={images:EmbeddedImagesHelper project.Assets.stairs.png}}">
         <Tab Route="SecondFloor">
             <ShellContent ContentTemplate="{DataTemplate local:Page1}"></ShellContent>
         </Tab>

@@ -9155,7 +9155,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\hlias\\.nuget\\packages\\": {},
+    "C:\\Users\\Ion\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
@@ -9163,11 +9163,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hlias\\Desktop\\Ilias\\Alilepidrasi\\project\\project\\project.UWP\\project.UWP.csproj",
+      "projectUniqueName": "C:\\Users\\Ion\\Documents\\GitHub\\SchoolProject\\project\\project.UWP\\project.UWP.csproj",
       "projectName": "project.UWP",
-      "projectPath": "C:\\Users\\hlias\\Desktop\\Ilias\\Alilepidrasi\\project\\project\\project.UWP\\project.UWP.csproj",
-      "packagesPath": "C:\\Users\\hlias\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hlias\\Desktop\\Ilias\\Alilepidrasi\\project\\project\\project.UWP\\obj\\",
+      "projectPath": "C:\\Users\\Ion\\Documents\\GitHub\\SchoolProject\\project\\project.UWP\\project.UWP.csproj",
+      "packagesPath": "C:\\Users\\Ion\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Ion\\Documents\\GitHub\\SchoolProject\\project\\project.UWP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -9176,7 +9176,7 @@
         "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\hlias\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Ion\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -9191,8 +9191,8 @@
       "frameworks": {
         "uap10.0.16299": {
           "projectReferences": {
-            "C:\\Users\\hlias\\Desktop\\Ilias\\Alilepidrasi\\project\\project\\project\\project.csproj": {
-              "projectPath": "C:\\Users\\hlias\\Desktop\\Ilias\\Alilepidrasi\\project\\project\\project\\project.csproj"
+            "C:\\Users\\Ion\\Documents\\GitHub\\SchoolProject\\project\\project\\project.csproj": {
+              "projectPath": "C:\\Users\\Ion\\Documents\\GitHub\\SchoolProject\\project\\project\\project.csproj"
             }
           }
         }
